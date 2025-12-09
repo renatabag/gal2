@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея артефактов</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Галерея артефактов</h1>
+    
+    <div class="add-form">
+        <h2>Добавить новый артефакт</h2>
+        <input id="artifact-title" type="text" placeholder="Название артефакта">
+        <input id="artifact-category" type="text" placeholder="Категория">
+        <input id="artifact-image" type="text" placeholder="URL изображения">
+        <button id="add-btn">Добавить артефакт</button>
+    </div>
+    
+    <div class="filter">
+        <h2>Фильтр</h2>
+        <input id="search-input" type="text" placeholder="Поиск по названию...">
+        <select id="category-select">
+            <option value="all">Все категории</option>
+        </select>
+    </div>
+    
+    <div id="gallery" class="gallery">
+        <!-- Здесь будут карточки -->
+    </div>
+    
+    <div id="error-banner" class="error">
+        <p>Заполните все поля!</p>
+        <button id="close-error">×</button>
+    </div>
+    
+    <footer>
+        <p>Практика №10. Счетчик: <span id="counter">0</span></p>
+        <button id="theme-btn">Сменить тему</button>
+    </footer>
+</body>
+</html>
